@@ -58,9 +58,11 @@ This desktop application can choose a desired file (.mp4) from local file path t
 ## Using the program
 
 * The program should be look like this
-  ![type](Application.PNG)
+  
+![type](Application.png)
+
 * First you need to select the video (.mp4) from your local drive
 * Then you choose language and model (Both must be filled)
   
-* After that, there will be a new file that contain audio file (.mp3), subtitle file (.srt), and text file (.txt)
-* The new ly video that had been added the subtitle will be named `"file name"+subtitle.mp4`
+* After that click start button, there will be a new file that contain audio file (.mp3), subtitle file (.srt), and text file (.txt)
+* The new video that had been added the subtitle will be named `"file name"+subtitle.mp4`
