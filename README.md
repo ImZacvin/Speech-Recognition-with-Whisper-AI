@@ -10,6 +10,6 @@ Go to : [https://packaging.python.org/guides/tool-recommendations/](https://pyto
 
 Choose the specification you desire
 
-![title](PyTorch.png)
+![title](PyTorch.JPG)
 
 
