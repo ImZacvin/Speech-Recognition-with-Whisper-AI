@@ -4,12 +4,36 @@ This desktop application can choose a desired file (.mp4) from local file path t
 
 ## Set Up
 
-* PyTorch Installation
+### Python
 
-Go to : [https://packaging.python.org/guides/tool-recommendations/](https://pytorch.org/get-started/locally/)
+* Go to : https://www.python.org/downloads/
+* Download and install the app
+* Check in the command prompt
+* Type `python -v`
 
-Choose the specification you desire
+### Whisper AI, Pysrt, moviepy, tk
 
-![title](PyTorch.JPG)
+* Open command prompt
+* Type `pip install openai-whisper pysrt tk moviepy`
 
+### PyTorch Installation
+
+* Go to : [https://packaging.python.org/guides/tool-recommendations/](https://pytorch.org/get-started/locally/)
+* Choose the specification you desire
+
+![title](PyTorch.jpg)
+
+* Copy the command after choosing the selection.
+* Run command prompt (windows) then paste the command
+
+### Chocolatey and ffmpeg installation 
+
+* Go to : https://chocolatey.org/install
+* Choose individual and copy the command
+
+  ![title](Chocolatey.jpg)
+
+* Open windows PowerShell as Administrator
+* Paste the command and wait for download
+* After complete, run `choco install ffmpeg`
 
