@@ -15,10 +15,10 @@ This desktop application can choose a desired file (.mp4) from local file path t
 * Check in the command prompt.
 * Type `python -v`.
 
-### Whisper AI, Pysrt, moviepy, tk
+### Whisper AI, Pysrt, moviepy, tkinter, moviepy==2.0.0.dev2, imageio==2.25.1
 
 * Open command prompt.
-* Type `pip install openai-whisper pysrt tk moviepy`
+* Type `pip install openai-whisper pysrt tk moviepy, imageio==2.25.1, moviepy==2.0.0.dev2`
 
 ### PyTorch Installation
 
@@ -30,7 +30,14 @@ This desktop application can choose a desired file (.mp4) from local file path t
 * Copy the command after choosing the selection.
 * Run command prompt (windows) then paste the command.
 
-### Chocolatey and ffmpeg installation 
+### ffmpeg installation 
+
+* Go to : https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z
+* Extract the file.
+* Go to environment variable, on system variables, choose path and click edit.
+* Click new button. then paste the file path of ffmpeg with bin dir (Examples : `C:\ffmpeg\bin`)
+
+### Chocolatey, imageMagick installation 
 
 * Go to : https://chocolatey.org/install
 * Choose individual and copy the command.
@@ -39,8 +46,15 @@ This desktop application can choose a desired file (.mp4) from local file path t
 
 * Open windows PowerShell as Administrator.
 * Paste the command and wait for download.
-* After complete, run `choco install ffmpeg`
+* Then run `choco install imagemagick`
 * All should be done
+  
+### imageMagick changes
+
+* Open PowerShell as Administrator
+* Locate the policy.xml File: On Windows, ImageMagick’s configuration files are typically located in a directory like C:\Program Files\ImageMagick-6.9.12-Q16 or similar. You will need to find the exact path where policy.xml is located.
+* then run `(Get-Content -Path "C:\Path\To\ImageMagick-6.x.y\policy.xml") -replace 'none', 'read,write' | Set-Content -Path "C:\Path\To\ImageMagick-6.x.y\policy.xml"` Where `"C:\Path\To\ImageMagick-6.x.y\policy.xml"` is your policy.xml path in the ImageMagick Folder
+
 
 ## Running the program
 
